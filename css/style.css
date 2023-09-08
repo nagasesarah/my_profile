@@ -1,0 +1,337 @@
+/* 共通設定 */
+/* 16.全称セレクタ */
+* {
+  /* 12.ボックスサイズの計算方法を定義 */
+  box-sizing: border-box;
+}
+
+html {
+  /* スムーススクロール */
+  scroll-behavior: smooth;
+  /* 固定ヘッダの高さ分(案1) */
+  /* scroll-padding-top: 70px; */
+}
+
+/* 固定ヘッダ(案2) */
+/*
+#pageLink1,
+#pageLink2,
+#pageLink3,
+#pageLink4 {
+  margin-top: -70px;
+  padding-top: 70px;
+} */
+
+body {
+  /* 12.外余白 */
+  margin: 0;
+  /* 10.書体を定義 */
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+  /* 20.横スクロールバーを動かしたときに背景色が途切れる */
+  min-width: 960px;
+}
+
+.inner {
+  /* 12.幅 */
+  width: 960px;
+  /* 12.要素を中央寄せ */
+  margin: 0 auto;
+  /* 12.内余白 */
+  padding: 5px;
+}
+
+section {
+  /* 12.外余白 */
+  margin: 20px 0;
+  /* 13.回り込み解除 */
+  clear: both;
+}
+
+/* ヘッダー */
+header {
+  /* 11.背景色 */
+  background-color: #333;
+  /* 12.内余白 */
+  padding: 5px;
+  /* position: fixed;
+  top: 0px;
+  width: 100%; */
+}
+ /*新しく入力したところ*/
+ mainVisual {
+ background-image: url(../imag/616b1d287d865362396df130ea72571f)
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%
+ height: cale(100vh - 200px);
+ background-position: right;
+}
+
+
+/* ロゴ */
+.logoLink {
+  /* 10.文字色 */
+  color: #e6b422;
+  /* 10.文字装飾 */
+  text-decoration: none;
+  /* 10.文字太さ */
+  font-weight: 700;
+  /* 10.文字サイズ */
+  font-size: 2rem;
+  /* 10.書体を定義 */
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* nav */
+.navList {
+  /* 13.リスト */
+  list-style: none;
+  /* 12.内余白(左) */
+  padding-left: 0;
+  /* 12.外余白 */
+  margin: 8px 0;
+}
+
+.navItem {
+  /* 16.表示方法 */
+  display: inline-block;
+}
+
+a {
+	/* 16.変化の時間を定義 */
+  transition: background-color 0.8s, color 0.8s;
+	/*  transition: all 3s; */
+}
+
+.navLink {
+  /* 10.文字色 */
+  color: #e6b422;
+  /* 10.文字装飾 */
+  text-decoration: none;
+  /* 10.文字太さ */
+  font-weight: 700;
+  /* 12.幅 */
+  width: 120px;
+  /* 12.高さ */
+  height: 30px;
+  /* 10.行間 */
+  line-height: 30px;
+  /* 16.表示方法 */
+  display: inline-block;
+  /* 10.行揃え */
+  text-align: center;
+  /* 11.背景色 */
+  background-color: #666;
+}
+
+.navLink:hover {
+  /* 11.背景色 */
+  background-color: #333;
+}
+
+/* 18.flex */
+header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 見出し */
+h1 {
+  /* 10.文字色 */
+  color: #fff;
+  /* 10.文字に影を付ける */
+  text-shadow: 1px 1px #000,
+    1px 0 #000,
+    1px -1px #000,
+    0 -1px #000,
+    -1px -1px #000,
+    -1px 0 #000,
+    -1px 1px #000,
+    0 1px #000;
+  /* 11.グラデーション */
+  background-image: linear-gradient(to left, #666, #fff);
+  /* 12.内余白 */
+  padding: 7px;
+}
+
+h2 {
+  /* 12.枠線 */
+  border-bottom: 2px solid #333;
+  /* 10.行揃え */
+  text-align: center;
+}
+
+h3 {
+  /* 12.枠線 */
+  border: 2px dashed #ccc;
+  /* 11.背景色 */
+  background-color: #333;
+  /* 10.文字色 */
+  color: #fff;
+  /* 12.ボックスに影を付ける */
+  box-shadow: 0 0 0 3px #333;
+  /* 12.内余白 */
+  padding: 5px;
+}
+
+/* About */
+.aboutTitle {
+  /* 12.背景画像 */
+  background-image: url(../img/pencil.png);
+  /* 12.背景画像繰り返し */
+  background-repeat: no-repeat;
+  /* 12.背景画像サイズ */
+  background-size: 16px;
+  /* 12.背景位置調整 */
+  background-position: 0 3px;
+  /* 12.左内余白 */
+  padding-left: 25px;
+}
+
+.aboutList {
+  /* 14.リストスタイル */
+  list-style: none;
+  /* 12.左内余白 */
+  padding-left: 10px;
+}
+
+.aboutListItem dl {
+  /* 18. flex */
+  display: flex;
+}
+
+.aboutListItem dl dt {
+  /* 12. 幅 */
+  width: 15%;
+}
+
+/* favarite */
+
+.itemImg {
+  /* 13.表示位置（回り込み） */
+  float: left;
+  /* 12.外余白 */
+  margin: 0 1em 20px 0;
+}
+
+.cardList {
+  /* 14.リストスタイル */
+  list-style: none;
+  /* 12.左内余白 */
+  padding-left: 0;
+  /* 18.flex */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardListItem {
+  /* 12.幅 */
+  width: 310px;
+  /* 12.角丸 */
+  border-radius: 10px;
+  /* 14.はみ出た部分の定義 */
+  overflow: hidden;
+  /* 12.外余白(下) */
+  margin-bottom: 10px;
+  /* 12.外余白(右) */
+  margin-right: 10px;
+  /* 12.ボックスに影を付ける */
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+/* 16.疑似クラス */
+.cardListItem:nth-child(3) {
+  margin-right: 0;
+}
+
+.cardList .title {
+  /* 12.内余白 */
+  padding: 0 5px;
+}
+
+.cardList .text {
+  /* 12.内余白 */
+  padding: 0 5px;
+}
+
+figure {
+  /* 12.外余白 */
+  margin: 0;
+}
+
+/* 13.img要素の定番定義 */
+img {
+  /* はみ出た画像を縮小する */
+  max-width: 100%;
+  /* 縦横比を合わせる */
+  height: auto;
+  /* 画像下の隙間をなくす */
+  vertical-align: bottom;
+}
+
+/* 14.table */
+table {
+  border: 2px solid #333;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 960px;
+}
+
+th {
+  border: 2px solid #333;
+  color: #fff;
+  background-color: #666;
+  padding: 5px;
+  width: 320px;
+}
+
+td {
+  border: 2px solid #333;
+  padding: 5px;
+}
+
+.scrollBox {
+  overflow-x: auto;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: 5px;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+}
+
+.pageTop {
+  text-align: right;
+  /* 19.position */
+  position: fixed;
+  right: 20px;
+  bottom: 45px;
+}
+
+/* 16.背景画像を使ったボタンを定義する */
+.pageTopLink {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-image: url(../img/pagetop.png);
+  background-repeat: no-repeat;
+  background-size: 48px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.pageTopLink:hover {
+  background-position-y: -48px;
+}
+

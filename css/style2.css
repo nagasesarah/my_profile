@@ -1,0 +1,147 @@
+body {
+ margin: 0 ;
+ margin-bottom: 10px;
+ color: #fff;
+
+}
+
+
+figure {
+ text-align: center;
+ margin: 0 auto;
+
+}
+
+video {
+z-index: -1;
+position: fixed;
+  top: 0;
+  left: -5px;
+  width: auto;
+  height: 100vh;
+
+}
+
+
+/* ヘッダー */
+header {
+ overflow: hidden;
+  /* 11.背景色 */
+  background-color: #333;
+  /* 12.内余白 */
+  padding: 5px;
+  /* position: fixed;
+  top: 0px;
+  width: 100%; */
+}
+
+/* ロゴ */
+.logoLink {
+  /* 10.文字色 */
+  color: #00bfd4;
+  /* 10.文字装飾 */
+  text-decoration: none;
+  /* 10.文字太さ */
+  font-weight: 700;
+  /* 10.文字サイズ */
+  font-size: 2rem;
+  /* 10.書体を定義 */
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* nav */
+.navList {
+  /* 13.リスト */
+  list-style: none;
+  /* 12.内余白(左) */
+  padding-left: 0;
+  /* 12.外余白 */
+  margin: 8px 0;
+}
+
+.navItem {
+  /* 16.表示方法 */
+  display: inline-block;
+}
+
+a {
+	/* 16.変化の時間を定義 */
+  transition: background-color 0.8s, color 0.8s;
+	/*  transition: all 3s; */
+}
+
+.navLink {
+  /* 10.文字色 */
+  color: #00d4cccf;
+  /* 10.文字装飾 */
+  text-decoration: none;
+  /* 10.文字太さ */
+  font-weight: 700;
+  /* 12.幅 */
+  width: 120px;
+  /* 12.高さ */
+  height: 30px;
+  /* 10.行間 */
+  line-height: 30px;
+  /* 16.表示方法 */
+  display: inline-block;
+  /* 10.行揃え */
+  text-align: center;
+  /* 11.背景色 */
+  background-color: #666;
+}
+
+.navLink:hover {
+  /* 11.背景色 */
+  background-color: #333;
+}
+
+/* 18.flex */
+header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+ h3 {
+ border: double;
+  /* 11.背景色 */
+  background-color: #333;
+  /* 10.文字色 */
+  color: #00d4cccf;
+  /* 12.ボックスに影を付ける */
+  box-shadow: 0 0 0 3px #333;
+  /* 12.内余白 */
+  padding: 5px;
+
+}
+
+
+.me {
+ display: flex;
+
+}
+
+
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: 5px;
+}
+
+.copyright {
+  text-align: left;
+  color: #333;
+}
+.pageTop {
+  text-align: right;
+  /* 19.position */
+  position: fixed;
+  right: 20px;
+  bottom: 45px;
+
+.pageTopLink:hover {
+  background-position-y: -48px;
+}
+
+
